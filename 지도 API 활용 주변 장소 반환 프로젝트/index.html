@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>키워드로 장소검색하고 목록으로 표출하기</title>
+	<link rel="stylesheet" href="./css/main.css?ver=1">
+    <style>
+		@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+	</style>
+</head>
+<body>   
+
+<div class="div_1">
+    <img src="./image/place.png" class="placeimg">
+    내 주위 병원 찾기
+</div>
+
+<form onsubmit="searchPlaces8(); return false;" id="searchform">
+    <input type="text" placeholder="궁금한 장소를 검색하세요" id="sk"> 
+    <button type="submit" id="submitbtn"> SUBMIT </button> 
+</form>
+
+<div class="div_2" style="float: left;">
+    <input type="checkbox" id="keyword_search1" value="종로 이비인후과" onclick="searchPlaces1()"> 이비인후과 <br>
+    <input type="checkbox" id="keyword_search2" value="종로 소아과" onclick="searchPlaces2()"> 소아과 <br>
+    <input type="checkbox" id="keyword_search3" value="종로 내과" onclick="searchPlaces3()"> 내과
+</div>
+
+<div class="div_3" style="float: left;">
+    <input type="checkbox" id="keyword_search4" value="종로 성형외과" onclick="searchPlaces4()"> 성형외과 <br>
+    <input type="checkbox" id="keyword_search5" value="종로 치과" onclick="searchPlaces5()"> 치과
+</div>
+
+<div class="div_4">
+    <input type="checkbox" id="keyword_search6" value="종로 안과" onclick="searchPlaces6()"> 안과 <br>
+    <input type="checkbox" id="keyword_search7" value="종로 피부과" onclick="searchPlaces7()"> 피부과
+</div>
+
+<div class="map_wrap">
+    <div id="map" style="width: 600px; height: 400px; margin-left: 450px;"></div>
+
+    <div id="menu_wrap" class="bg_white">
+        <hr>
+        <ul id="placesList"></ul>
+        <div id="pagination"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=57e8875b6fde1cfff1f7836503611aca&libraries=services"></script>
+<script src="./js/main.js?ver=3"></script>
+</body>
+</html>
