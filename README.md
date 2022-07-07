@@ -8,6 +8,4 @@
 <b> Warning </b><br>
 ※ You can view it only when a localhost server is set up on your PC.
 <br><br>
-Detailed feature description<br>
-  - 자세한 설명은 하단의 블로그를 참조하세요.
-https://blog.naver.com/sitting077/222623107505
+Detailed feature description https://blog.naver.com/sitting077/222623107505
